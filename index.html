@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interactive AI Travel Guide</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Interactive AI Travel Guide</h1>
+  </header>
+  <main>
+    <section id="filters">
+      <h2>Plan Your Trip</h2>
+      <form id="travel-form">
+        <label for="country">Select Country:</label>
+        <select id="country" name="country" required>
+          <option value="">--Choose a country--</option>
+          <option value="Japan">Japan</option>
+          <option value="Italy">Italy</option>
+          <option value="France">France</option>
+          <option value="USA">USA</option>
+        </select>
+        <fieldset>
+          <legend>Select Interests:</legend>
+          <label><input type="checkbox" name="interest" value="food" /> Food</label>
+          <label><input type="checkbox" name="interest" value="nature" /> Nature</label>
+          <label><input type="checkbox" name="interest" value="history" /> History</label>
+          <label><input type="checkbox" name="interest" value="art" /> Art</label>
+        </fieldset>
+        <button type="submit">Get Itinerary</button>
+      </form>
+    </section>
+    <section id="itinerary">
+      <h2>Your AI Travel Itinerary</h2>
+      <div id="itinerary-content">
+        <p>Please select your preferences and click "Get Itinerary".</p>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
